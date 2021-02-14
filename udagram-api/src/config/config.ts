@@ -7,7 +7,7 @@ export const config = {
   'aws_region': 'us-east-1',
   'aws_profile': 'profile',
   'aws_media_bucket': 'third-project-dev',
-  'url': process.env.URL,
+  'url': 'http://localhost:8100',
   'jwt': {
     'secret': process.env.JWT_SECRET,
   },
