@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_MEDIA_BUCKET: third-project-dev
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_TOKEN: helloworld
+  POSTGRES_DATABASE: postgres
+  POSTGRES_HOST: third-project.cdivd2oc1rwt.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8100
+metadata:
+  name: env-config

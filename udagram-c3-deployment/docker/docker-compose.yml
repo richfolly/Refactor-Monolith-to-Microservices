@@ -1,15 +1,15 @@
 version: "3"
 services:
   reverseproxy:
-      image: wallacewong82/reverseproxy
+      image: olanrewaju1992/reverseproxy
       ports:
           - 8080:8080
       restart: always
       depends_on:
-        - backend-user
-        - backend-feed
+        - restapi-user
+        - restapi-feed
   backend-user:
-    image: wallacewong82/udacity-restapi-user
+    image: olanrewaju1992/udagram-c3-restapi-user
     volumes:
       - /usr/bin/aws
     environment:
@@ -23,7 +23,7 @@ services:
       JWT_SECRET: $JWT_SECRET
       URL: "http://localhost:8100"
   backend-feed:
-    image: wallacewong82/udacity-restapi-feed
+    image: olanrewaju1992/udagram-c3-restapi-feed
     volumes:
       - /usr/bin/aws
     environment:
@@ -37,6 +37,6 @@ services:
       JWT_SECRET: $JWT_SECRET
       URL: "http://localhost:8100"
   frontend:
-    image: wallacewong82/udacity-frontend:prod
+    image: olanrewaju1992/udagram-c3-frontend
     ports:
       - "8100:80
