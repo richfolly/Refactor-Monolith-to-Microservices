@@ -6,13 +6,13 @@ services:
     image: olanrewaju1992/reverseproxy
   backend_user:
     build:
-      context: ../../udacity-c3-restapi-user
-    image: olanrewaju1992/udacity-c3-restapi-user
+      context: ../../udagram-c3-restapi-user
+    image: olanrewaju1992/udagram-c3-restapi-user
   backend_feed:
     build:
-      context: ../../udacity-c3-restapi-feed
-    image: olanrewaju1992/udacity-c3-restapi-feed
+      context: ../../udagram-c3-restapi-feed
+    image: olanrewaju1992/udagram-c3-restapi-feed
   frontend:
     build:
-      context: ../../udacity-c3-frontend
-    image: olanrewaju1992/udacity-c3-frontend
+      context: ../../udagram-c3-frontend
+    image: olanrewaju1992/udagram-c3-frontend
